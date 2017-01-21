@@ -1,4 +1,4 @@
-nova-services
+restarting nova-services
 systemctl  restart openstack-nova-api 
 systemctl  restart openstack-nova-cert 
 systemctl  restart openstack-nova-conductor 
@@ -8,13 +8,13 @@ systemctl  restart openstack-nova-scheduler
 systemctl  restart openstack-nova-console 
 
 
-cinder-services
+restarting cinder-services
 systemctl restart openstack-cinder-volume.service
 systemctl restart openstack-cinder-scheduler.service
 systemctl restart openstack-cinder-api.service
 
 
-neutron-agents
+restarting neutron-agents
 systemctl restart neutron-openvswitch-agent 
 systemctl restart neutron-metadata-agent 
 systemctl restart neutron-dhcp-agent 
